@@ -24,7 +24,6 @@
             🌑
         </div>
         <header>
-            <img src="images/profileimage.jpg" alt="Profile Photo" width="275" height="298">
             <h1>Nicole Zegarra</h1>
         </header>
         <button id="menu"></button>
@@ -32,7 +31,6 @@
             <ul class="navigation">
                 <a href="#">Home</a>
                 <a href="#">Chamber</a>
-                <a href="week01/chamber-site-plan.html">Site Plan</a>
                 <a href="#">Final</a>
             </ul>
         </nav>
@@ -44,13 +42,30 @@
             </section>
             <section>
                 <h2>Student Photo</h2> 
+                <img src="images/profileimage.jpg" alt="Profile Photo" width="275" height="298">
+                <p></p>
             </section>
             <section>
                 <h2>Web Certificates Courses</h2>
+                <div class="filters">
+                  <button onclick="filterCourses('all')">All</button>
+                  <button onclick="filterCourses('cse')">CSE</button>
+                  <button onclick="filterCourses('wdd')">WDD</button>
+                </div>
+                
+                <ul class="course-list" id="courseList">
+                  <li data-category="wdd">WDD 130</li>
+                  <li data-category="wdd">WDD 131</li>
+                  <li data-category="wdd">WDD 231</li>
+                  <li data-category="cse">CSE 110</li>
+                  <li data-category="cse">CSE 111</li>
+                  <li data-category="cse">CSE 210</li>
+                </ul>
+                
             </section>
         </main>
         <footer>
-            <a href="https://github.com/yourusername" target="_blank"><img src="images/github_git_icon_145985.svg" alt="GitHub Profile"></a>
+            <a href="https://github.com/nicolezeg/wdd231" target="_blank"><img src="images/github_git_icon_145985.svg" alt="GitHub Profile"></a>
             <a href="https://www.linkedin.com/in/nicole-zegarra-2500a0253/" target="_blank"><img src="images/linkedin_icon_135436.svg" alt="LinkedIn Profile">
             <p>&copy; <span id="currentYear"></span> Nicole Zegarra, Peru <span id="peruvianFlag"></span> 🇵🇪</p>
             <p><span id="lastModified"></span></p>
