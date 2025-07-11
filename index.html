@@ -18,13 +18,15 @@
         <link rel="icon" href="favicon2.ico">
         <script src="scripts/getDates.js" defer=""></script>
         <script src="scripts/hamburgerButton.js" defer=""></script>
+        <script src="scripts/courses.js" defer=""></script>
+
     </head>
     <body>
         <div id="mode">
             🌑
         </div>
         <header>
-            <h1>Nicole Zegarra</h1>
+            <h1>Course Home Page</h1>
         </header>
         <button id="menu"></button>
         <nav>
@@ -36,37 +38,35 @@
         </nav>
         <main>
             <h1>Home</h1>
-            <section>
-                <h2>About Me</h2>
-                <p>siudhcfihuirchishdiguygcshuofhirhuysgvbsdckkgvjuhshsndjkjc djhdkvndfhvhu hdcdhnv sjdchsdkjcnf jdbchjdsbch</p>
-            </section>
-            <section>
-                <h2>Student Photo</h2> 
-                <img src="images/profileimage.jpg" alt="Profile Photo" width="275" height="298">
-                <p></p>
-            </section>
+            <div class="me-block">
+                <section>
+                    <h2>About Me</h2>
+                    <p>siudhcfihuirchishdiguygcshuofhirhuysgvbsdckkgvjuhshsndjkjc djhdkvndfhvhu hdcdhnv sjdchsdkjcnf jdbchjdsbch</p>
+                </section>
+                <section>
+                    <h2>Student Photo</h2> 
+                    <img src="images/profileimage.jpg" alt="Profile Photo" width="250" height="250">
+                    <p></p>
+                </section>
+            </div>
             <section>
                 <h2>Web Certificates Courses</h2>
-                <div class="filters">
-                  <button onclick="filterCourses('all')">All</button>
-                  <button onclick="filterCourses('cse')">CSE</button>
-                  <button onclick="filterCourses('wdd')">WDD</button>
+                <div class="button-container">
+                    <button onclick="displayCourses('all')">All Courses</button>
+                    <button onclick="displayCourses('WDD')">WDD Courses</button>
+                    <button onclick="displayCourses('CSE')">CSE Courses</button>
                 </div>
-                
-                <ul class="course-list" id="courseList">
-                  <li data-category="wdd">WDD 130</li>
-                  <li data-category="wdd">WDD 131</li>
-                  <li data-category="wdd">WDD 231</li>
-                  <li data-category="cse">CSE 110</li>
-                  <li data-category="cse">CSE 111</li>
-                  <li data-category="cse">CSE 210</li>
-                </ul>
+                <div id="course-list"></div>
+                <div id="total-credits"></div>
                 
             </section>
         </main>
         <footer>
-            <a href="https://github.com/nicolezeg/wdd231" target="_blank"><img src="images/github_git_icon_145985.svg" alt="GitHub Profile"></a>
-            <a href="https://www.linkedin.com/in/nicole-zegarra-2500a0253/" target="_blank"><img src="images/linkedin_icon_135436.svg" alt="LinkedIn Profile">
+            <div class="social-links">
+                <a href="https://github.com/nicolezeg/wdd231" target="_blank"><img src="images/github_git_icon_145985.svg" alt="GitHub Profile"></a>
+                <a href="https://www.linkedin.com/in/nicole-zegarra-2500a0253/" target="_blank"><img src="images/linkedin_icon_135436.svg" alt="LinkedIn Profile"></a>
+            </div>
+
             <p>&copy; <span id="currentYear"></span> Nicole Zegarra, Peru <span id="peruvianFlag"></span> 🇵🇪</p>
             <p><span id="lastModified"></span></p>
         </footer>

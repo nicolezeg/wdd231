@@ -7,7 +7,7 @@ modeButton.addEventListener("click", () => {
 		header.style.color = "#fff";
 		modeButton.textContent = "🔆";
 	} else {
-		header.style.background = "blanchedalmond";
+		header.style.background = "#9CA185";
 		header.style.color = "#000";
 		modeButton.textContent = "🌑";
 	}
