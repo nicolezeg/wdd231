@@ -62,7 +62,6 @@ header h1 {
 .navigation {
     list-style: none;
     display: flex;
-    padding: 0.5rem;
     background-color: var(--dark-color);
     flex-direction: column;    
 }  
@@ -107,12 +106,18 @@ section {
 }
 .me-block {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 .me-block img {
-    align-items: center;
+    width: 50%;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+    margin-left: 3rem;
+
 }
+
 p {
     text-align: center;
 }
