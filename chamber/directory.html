@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huanuco Chamber of Commerce Directory Page</title>
+    <meta name="description" content="The chamber directory page lists all current members of the chamber of commerce in a responsive layout. View members by business type, contact details, and membership level in grid or list view.">
+    <meta name="author" content="Nicole Zegarra">
+    <meta property="facebook:title" content="Nicole's Chamber Website Project">
+    <meta property="facebook:type" content="website">
+    <meta property="facebook:image" content="https://4.bp.blogspot.com/-6x39_N4aZT8/UfgOerwv4mI/AAAAAAAACiw/vy1N-PtUgV0/s1600/huanuco.jpg">
+    <meta property="facebook:url" content="https://nicolezeg.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="favicon02.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/hamButton.js" defer=""></script>
+    <script src="scripts/getDates.js" defer=""></script>
+    <script src="scripts/directory.js" defer=""
+    ></script>
+</head>
+<body>
+    <header>
+        <h1>Huanuco Chamber of Commerce</h1>
+    </header>
+    <button id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </ul>
+    </nav>
+    <main>
+        <main>
+            <section class="directory-controls">
+              <button id="gridView">Grid View</button>
+              <button id="listView">List View</button>
+            </section>
+            <section id="memberDirectory" class="grid"></section>
+          </main>          
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Huanuco Chamber <span id="peruvianFlag"></span> 🇵🇪</p>
+        <p>Nicole Zegarra</p>
+        <p>WDD 231</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

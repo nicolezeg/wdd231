@@ -1,0 +1,67 @@
+{
+    "members": [
+      {
+        "name": "Café Cabrera",
+        "address": "Jr. Dos de Mayo 145, Huánuco",
+        "phone": "+51 62 512345",
+        "website": "https://cafecabrera.com/",
+        "image": "cafe.jpg",
+        "membership": "Gold",
+        "description": "Traditional Peruvian coffee shop offering local blends and artisan pastries."
+      },
+      {
+        "name": "Universidad Nacional Hermilio Valdizán",
+        "address": "Av. Universitaria s/n, Huánuco",
+        "phone": "+51 62 512345",
+        "website": "https://www.unheval.edu.pe",
+        "image": "unheval.png",
+        "membership": "Gold",
+        "description": "Top public university in the Huánuco region, offering diverse professional careers."
+      },
+      {
+        "name": "Hotel Venecia",
+        "address": "Jr. Dámaso Beraún 768, Huánuco",
+        "phone": "+51 62 528894",
+        "website": "https://www.facebook.com/100093981372812/about/",
+        "image": "hotel-venecia.jpg",
+        "membership": "Silver",
+        "description": "Comfortable and elegant hotel with great city access and excellent service."
+      },
+      {
+        "name": "Boticas Perú",
+        "address": "Av. Leoncio Prado 512, Huánuco",
+        "phone": "+51 62 537010",
+        "website": "https://boticasperu.pe/",
+        "image": "boticasperu-logo.jpg",
+        "membership": "Bronze",
+        "description": "Trusted pharmacy chain offering medicine, health products, and personal care."
+      },
+      {
+        "name": "Clínica San Pedro",
+        "address": "Av. Alameda de la República 1180, Huánuco",
+        "phone": "+51 62 522222",
+        "website": "https://www.clinicasanpedro.com/",
+        "image": "clinica-sanpedro.svg",
+        "membership": "Gold",
+        "description": "Private healthcare center with specialties in surgery, maternity, and emergencies."
+      },
+      {
+        "name": "Tradiciones Huanuqueñas",
+        "address": "Jirón Huallayco 2444, Huánuco",
+        "phone": "+51 62 528700",
+        "website": "https://www.facebook.com/comidaregionalhuanuquena/",
+        "image": "tradicioneshuanuqueñas.jpg",
+        "membership": "Silver",
+        "description": "Delicious Peruvian cuisine in a cozy, family-friendly atmosphere."
+      },
+      {
+        "name": "Aleve Axda",
+        "address": "Jr. Crespo y Castillo N°999, Huánuco",
+        "phone": "+51 62 500123",
+        "website": "https://aleveaxda.com/",
+        "image": "aleve.jpg",
+        "membership": "Silver",
+        "description": "Technical programs designed to help you become a competent and innovative professional."
+      }
+  ]
+}
