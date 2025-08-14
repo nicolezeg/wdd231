@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #161616;
+  --second-color: #e3e3e3;
+  --accent1-color: rgb(236, 84, 24);
+  --accent2-color: rgba(255, 136, 0, 0.61);
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  text-align: center;
+  align-self: center;
+  padding: 1rem;
+}
+
+header img {
+    width: 120px;
+}
+
+/*----Navigation-----*/
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--second-color);
+}
+
+#menu::before {
+	content: "☰";
+	cursor: pointer;
+}
+
+#menu.open::before {
+	content: "✘";
+	cursor: pointer;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.navigation a {
+  display: none;
+  padding: 0.8rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6em;
+  color: var(--second-color);
+  font-weight: 800;
+}
+.navigation a:hover {
+  background-color: var(--accent1-color);
+  color: black;
+  text-decoration: underline;
+}
+
+.open a{
+	display: block;
+}
