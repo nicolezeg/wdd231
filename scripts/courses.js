@@ -94,11 +94,12 @@ function displayCourses(filter) {
     filteredCourses.forEach(course => {
         const courseCard = document.createElement('div');
         courseCard.className = 'course-card ' + (course.completed ? 'completed' : 'not-completed');
-        courseCard.innerHTML = `
-<h3>${course.subject} ${course.number}</h3>
+        courseCard.innerHTML = `<h3>${course.subject} ${course.number}</h3>
         `;
         courseList.appendChild(courseCard);
-        total += course.credits; 
+        if (course.completed) {
+           total += course.credits;   // ← only count completed courses
+        }
     });
     // Display total credits
     totalCredits.innerHTML = `Total Credits: ${total}`;
