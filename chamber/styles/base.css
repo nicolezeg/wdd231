@@ -158,41 +158,25 @@ main h1 {
 }
 
 #company-spotlights {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    /*background-color: #f4f4f4;*/
-    background-color: white;
-    border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .spotlight {
-    margin-bottom: 20px;
-    padding: 15px;
-    /*background-color: #ffffff;*/
-    background-color: var(--neutral-color);
-    border-radius: 8px;
-    border: 1px solid rgb(204, 204, 204);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}  
+  border: 2px solid #ddd;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  background: #f9f9f9;
+}
 
-.spotlight h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}  
-
-.spotlight p {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #007bff;
-}  
-
-.spotlight a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-}  
+.spotlight-logo {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
 
 /* Main form container */
 .form {
