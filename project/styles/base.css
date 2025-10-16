@@ -17,7 +17,7 @@ body {
 
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   background-color: var(--primary-color);
@@ -33,32 +33,15 @@ header img {
 
 /*----Navigation-----*/
 
-#menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: var(--second-color);
-}
-
-#menu::before {
-	content: "☰";
-	cursor: pointer;
-}
-
-#menu.open::before {
-	content: "✘";
-	cursor: pointer;
-}
 
 .navigation {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-decoration: none;
 }
 .navigation a {
-  display: none;
   padding: 0.8rem;
   text-decoration: none;
   text-align: center;
