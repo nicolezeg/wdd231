@@ -62,20 +62,6 @@ const courses = [
         ],
         completed: true
     },
-    {
-        subject: 'WDD',
-        number: 231,
-        title: 'Frontend Web Development I',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
-        technology: [
-            'HTML',
-            'CSS',
-            'JavaScript'
-        ],
-        completed: false
-    }
 ]
 
 courses.forEach(course => {
