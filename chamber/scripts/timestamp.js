@@ -14,7 +14,8 @@ document.getElementById("display-name").textContent = fullName;
 // Display email, phone, and organization
 document.getElementById("display-email").textContent = params.get("email");
 document.getElementById("display-phone").textContent = params.get("phone");
-document.getElementById("display-org").textContent = params.get("organization")// Display the timestamp in a readable format
+document.getElementById("display-org").textContent = params.get("organization");// Display the timestamp in a readable format
+document.getElementById("display-desc").textContent = params.get("description");// Display the timestamp in a readable format
 if (params.get("timestamp")) {
     const date = new Date(params.get("timestamp"));
     document.getElementById("display-date").textContent = date.toLocaleString();
