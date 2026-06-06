@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submitted</title>
+    <title>Thank You - Huanuco Chamber of Commerce</title>
+    <meta name="description" content="Prospective members can apply to join the Chamber of Commerce through this membership application form. Follow the detailed instructions for required inputs and submission guidelines.">
+    <meta name="author" content="Nicole Zegarra">
+    <meta property="og:title" content="Nicole's Chamber Website Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://4.bp.blogspot.com/-6x39_N4aZT8/UfgOerwv4mI/AAAAAAAACiw/vy1N-PtUgV0/s1600/huanuco.jpg">
+    <meta property="og:url" content="https://nicolezeg.github.io/wdd230/chamber/index.html">
+    <link rel="icon" href="images/favicon02.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/ham-button.js" defer=""></script>
+    <script src="scripts/get-dates.js" defer=""></script>
+    <script src="scripts/weather.js" defer=""></script>
+    <script src="scripts/timestamp.js" defer=""></script>
 </head>
 <body>
-    <h1>Form Submitted Successfully!</h1>
-    <p>Thank you for submitting this form. We will process your request shortly.</p>
+    <header>
+        <h1>Huanuco Chamber of Commerce</h1>
+    </header>
+    <button id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- New section to display submitted data -->
+        <div class="thank-you-section">
+            <h2>Thank You!</h2>
+            <p>Your membership application has been submitted successfully. Here are the details you provided:</p>
+            
+            <div class="form-data-display">
+                <p><strong>Name:</strong> <span id="display-name"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+                <p><strong>Organization:</strong> <span id="display-org"></span></p>
+                <p><strong>Date Submitted:</strong> <span id="display-date"></span></p>
+            </div>
+            
+            <p>We will contact you shortly!</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Huanuco Chamber <span id="peruvianFlag"></span> 🇵🇪</p>
+        <p>Nicole Zegarra</p>
+        <p>WDD 231</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
