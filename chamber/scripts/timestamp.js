@@ -14,8 +14,20 @@ document.getElementById("display-name").textContent = fullName;
 // Display email, phone, and organization
 document.getElementById("display-email").textContent = params.get("email");
 document.getElementById("display-phone").textContent = params.get("phone");
-document.getElementById("display-org").textContent = params.get("organization");// Display the timestamp in a readable format
-document.getElementById("display-description").textContent = params.get("description");// Display the timestamp in a readable format
+document.getElementById("display-org").textContent = params.get("organization");
+document.getElementById("display-desc").textContent = params.get("description");
+// Display Membership Level
+const levelValue = params.get("membershipLevel");
+let levelText = "";
+
+if (levelValue === "np") levelText = "NP Membership (Free)";
+else if (levelValue === "bronze") levelText = "Bronze Membership";
+else if (levelValue === "silver") levelText = "Silver Membership";
+else if (levelValue === "gold") levelText = "Gold Membership";
+else levelText = levelValue;
+
+document.getElementById("display-level").textContent = levelText;
+
 if (params.get("timestamp")) {
     const date = new Date(params.get("timestamp"));
     document.getElementById("display-date").textContent = date.toLocaleString();
