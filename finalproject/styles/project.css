@@ -52,7 +52,7 @@ header img {
 
 .navigation {
   list-style: none;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
@@ -71,10 +71,26 @@ header img {
   color: black;
   text-decoration: underline;
 }
-
-.open a{
+.navigation.open {
+  display: flex;
+}
+.navigation.open a{
 	display: block;
 }
+/* hero */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;  /* Limits height on mobile */
+  object-fit: cover;
+  display: block;
+}
+
 /*------Main------*/
 
 main {
@@ -82,10 +98,9 @@ main {
   flex-direction: column;
   width: 100%;
   max-width: 940px;
-  margin: 1px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
-
 .grid-container {
   display: grid;
   grid-gap: 1rem;
@@ -94,9 +109,8 @@ main {
 
 .grid-item {
   display: grid;
-  margin-right: 1px;
-  margin-left: 7.5rem;
-  background-color: var(--accent2-color);
+  margin: 0 auto;
+  background-color: var(--accent1-color);
   border-radius: 3px;
   padding: 1rem;
 }
@@ -138,10 +152,58 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/*-----Form Styling------*/
+/*------TESTIMONIALS SECTION--------*/
+section {
+  background-color: rgba(254, 254, 255, 0.418);
+  border: 1px solid #222;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
 
+.about-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+/*------TESTIMONIALS - FIGURE STYLES--------*/
+.about-images figure {
+  border: thin #c0c0c0 solid;
+  background-color: #222;
+  padding: 8px;
+  width: 100%;
+  max-width: 280px;  /* Limits width on mobile */
+  text-align: center;
+}
+    
+.about-images figure img {
+  width: 100%;
+  max-width: 260px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+      
+.about-images figcaption {
+  background-color: #222;
+  color: white;
+  font: italic smaller sans-serif;
+  padding: 8px;
+  text-align: center;
+  display: block;
+  margin-top: 8px;
+}
+/*-----Form Styling------*/
+.rinfo {
+  width: 100%;
+  margin: 0 auto;  /* Centers the form horizontally */
+}
 .rinfo fieldset {
-    margin: 2rem ;
+    margin: 1rem auto;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: 2rem;

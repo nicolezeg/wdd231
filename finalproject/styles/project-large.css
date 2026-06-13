@@ -11,9 +11,10 @@
       position: relative;
     }
     .hero img {
-      display: block;
       width: 100%;
+      max-width: 100%;
       height: auto;
+      max-height: 600px;
     }
     .hero h1 {
       position: absolute;
@@ -75,7 +76,7 @@
     }
     .about-images {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
         margin-left: 0.5rem;
     }
 	.grid-container {
@@ -91,11 +92,17 @@
         display: none;
     }
     .navigation {
+        display: flex;
         flex-direction: row;
     }
     .navigation a {
         display: block;
         flex: 1 1 auto;
     }
-
+    .navigation a.active {
+        background-color: var(--dark-accent-color);
+        color: var(--accent1-color);
+        font-weight: bold;
+        text-decoration: underline;
+    }
 }
